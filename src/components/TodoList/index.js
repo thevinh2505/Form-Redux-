@@ -7,7 +7,6 @@ import { addTodoAction } from "../../redux/actions";
 import { todoRemainingSelector } from "../../redux/selectors";
 
 export default function TodoList() {
-
 	// Dispatch
 	const dispatch = useDispatch();
 
@@ -49,6 +48,7 @@ export default function TodoList() {
 				{todoList.map((todo) => {
 					return (
 						<Todo
+							id={todo.id}
 							key={todo.id}
 							name={todo.name}
 							prioriry={todo.priority}

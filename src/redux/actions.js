@@ -22,3 +22,10 @@ export const priorityFillterAction=(array)=>{
 		payload:array,
 	}
 }
+
+export const toggleTodoStatus=(id)=>{
+	return{
+		type:"todoList/toggleTodoStatus",
+		payload:id
+	}
+}
